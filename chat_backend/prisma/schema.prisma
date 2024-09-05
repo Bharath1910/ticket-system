@@ -1,0 +1,29 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model tickets {
+  id          String  @id @default(dbgenerated("gen_random_uuid()"))
+  name        String
+  validity    String  @default("1 day")
+  coordinates String?
+  cost        Int
+}
+
+model site_seeing {
+  id          String  @id @default(dbgenerated("gen_random_uuid()"))
+  open_time   String
+  open_days   String
+  coordinates String?
+}
