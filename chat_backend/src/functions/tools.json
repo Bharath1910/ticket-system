@@ -1,17 +1,64 @@
 {
-	"type": "function",
-	"function": {
-			"name": "get_weather",
-			"description": "Retrieves current weather information for a specified location.",
-			"parameters": {
-					"type": "object",
-					"properties": {
-							"location": {
-									"type": "string",
-									"description": "The name of the location for which the weather data is needed."
-							}
-					},
-					"required": ["location"]
+	"fetch_event_tickets": [
+		{
+			"id": "adult_uuasd",
+			"name": "museum all day pass",
+			"validity": "1 day",
+			"price": "200rs",
+			"coordinates": {
+				"latitude": 12.9716,
+				"longitude": 77.5946
 			}
-	}
+		},
+		{
+			"id": "adult_12312asd",
+			"name": "museum monthly pass",
+			"validity": "1 month",
+			"price": "2000rs",
+			"coordinates": {
+				"latitude": 12.9716,
+				"longitude": 77.5946
+			}
+		},
+		{
+			"id": "kids_123124",
+			"name": "museum kids day pass",
+			"validity": "1 day",
+			"price": "50rs",
+			"coordinates": {
+				"latitude": 12.9716,
+				"longitude": 77.5946
+			}
+		}
+	],
+
+	"fetch_sites": [
+		{
+			"name": "National Art Gallery",
+			"open_time": "10am to 6pm",
+			"open_days": "monday to sunday",
+			"coordinates": {
+				"latitude": 12.9716,
+				"longitude": 77.5946
+			}
+		},
+		{
+			"name": "bronze idols",
+			"open_time": "10am to 6pm",
+			"open_days": "monday to sunday",
+			"coordinates": {
+				"latitude": 12.9716,
+				"longitude": 77.5946
+			}
+		},
+		{
+			"name": "ancient paintings",
+			"open_time": "10am to 6pm",
+			"open_days": "monday to sunday",
+			"coordinates": {
+				"latitude": 12.9716,
+				"longitude": 77.5946
+			}
+		}
+	]
 }
