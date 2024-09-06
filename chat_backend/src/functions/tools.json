@@ -1,0 +1,17 @@
+{
+	"type": "function",
+	"function": {
+			"name": "get_weather",
+			"description": "Retrieves current weather information for a specified location.",
+			"parameters": {
+					"type": "object",
+					"properties": {
+							"location": {
+									"type": "string",
+									"description": "The name of the location for which the weather data is needed."
+							}
+					},
+					"required": ["location"]
+			}
+	}
+}
